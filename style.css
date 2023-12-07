@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --p-strongCyan: hsl(171, 66%, 44%);
+    --p-lightBlue: hsl(233, 100%, 69%);
+
+    --n-darkgrayishBlue: hsl(210, 10%, 33%);
+    --n-grayishBlue: hsl(201, 11%, 66%);
+
+    --fs-body: 18px;
+
+    --fw-regular: 400;
+    --fw-semiBold: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: var(--fs-body);
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    width: 375px;
+}
+
+h2, h3 {
+    font-weight: var(--fw-semiBold);
+    color: var(--n-darkgrayishBlue);
+}
+
+.computer, .devices {
+    width: 100%;
+}
+
+/*=====================================================*/
+header {
+    padding: 0 45px 0 45px;
+}
+
+header img {
+    margin-top: 121px;
+}
+
+header h2 {
+    margin-top: 71px;
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 24px;
+}
+
+p {
+    color: var(--n-grayishBlue)
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.ios, .mac {
+    height: 56px;
+    border-radius: 100px;
+    border: none;
+    font-size: var(--fs-body);
+    
+}
+
+#ios, #mac {
+    text-decoration: none;
+    color: white;
+    font-weight: var(--fw-semiBold);
+}
+
+.ios {
+    background-color: var(--p-strongCyan);
+    margin-bottom: 23px;
+}
+
+.mac {
+    background-color: var(--p-lightBlue);
+    margin-bottom: 166px;
+}
+
+.snippet {
+    padding: 0 22px 0 22px;
+}
+
+.snippet h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+.snippet p {
+    margin-bottom: 67px;
+}
+
+.computer {
+    margin-bottom: 61px;
+}
+
+.snippet h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
