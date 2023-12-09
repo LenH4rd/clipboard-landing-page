@@ -240,7 +240,7 @@ path:hover {
     fill: rgba(36, 187, 165, 255);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1440px){
     body {
         background-image: url(images/bg-header-desktop.png);
         min-height: 100vh;
