@@ -46,7 +46,7 @@ body {
 
 main {
     text-align: center;
-    width: 375px;
+    width: 100%;
 }
 
 h2, h3 {
@@ -65,6 +65,10 @@ p {
 img {
     max-width: 100%;
     height: auto;
+}
+
+a {
+    text-decoration: none;
 }
 /*=====================================================*/
 header {
@@ -210,19 +214,14 @@ footer {
     background-color: hsl(220, 18%, 97%);  
 }
 
-.information {
-    display: grid;
-}
-
 #clipboard-footer {
     width: 55px;
     height: 55px;
     margin: 55px 0 42px 0;
 }
 
-.information a {
-    text-decoration: none;
-    margin-bottom: 24px;
+li a {
+    line-height: 2em;
     color: var(--n-darkgrayishBlue);
 }
 
@@ -250,15 +249,11 @@ path:hover {
     fill: rgba(36, 187, 165, 255);
 }
 
-@media (min-width: 768px) and (max-width: 1440px){
+@media (min-width: 768px){
     body {
         background-image: url(images/bg-header-desktop.png);
         min-height: 100vh;
         position: relative;
-    }
-
-    main {
-        width: 1440px;
     }
 
     header {
@@ -402,44 +397,25 @@ path:hover {
         align-items: center;
     }
 
-    .information {
-        display: grid;
-        grid-template-areas: 
-        'faqs privacy install'
-        'contact press press';
+
+    nav {
         text-align: left;
-        margin: 0 300px 0 130px;
-    }
-
-    #faqs {
-        grid-area: faqs;
-    }
-
-    #privacy {
-        grid-area: privacy;    
-    }
-
-    #install {
-        grid-area: install;
-    }
-
-    #contact {
-        grid-area: contact;
-    }
-
-    #press {
-        grid-area: press;
+        margin-left: 60px;
     }
     
-    .information a {
-        margin-right: 50px;
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    .information a:hover {
-        color: rgba(36, 187, 165, 255);
+
+    li{
+        list-style: none;
     }
-    
-    .information, .icon {
-        margin-top: 30px;
+    li a {
+        margin-right: 60px;
+    }
+    .icon {
+        position: absolute;
+        right: 10%;
     }
 }
